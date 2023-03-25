@@ -1,0 +1,12 @@
+@import url("base.css");
+
+html::-webkit-scrollbar {
+	/* Chrome, Safari, Opera */
+	display: none;
+}
+
+html {
+	overflow: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
