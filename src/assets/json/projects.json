@@ -1,0 +1,22 @@
+{
+	"projects": {
+		"name": "test1",
+		"year": 2021,
+		"type": "School Project",
+		"desc": "This is a test project",
+		"tech": [
+			"HTML",
+			"CSS",
+			"JavaScript"
+		],
+		"links": {
+			"title": "https://www.google.com",
+			"github": "https://www.github.com",
+			"release": "https://www.release.com"
+		},
+		"images": {
+			"main": "https://www.google.com",
+			"alt": "https://www.google.com"
+		}
+	}
+}
