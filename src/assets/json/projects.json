@@ -1,5 +1,5 @@
-{
-	"projects": {
+[
+	{
 		"name": "test1",
 		"year": 2021,
 		"type": "School Project",
@@ -14,9 +14,25 @@
 			"github": "https://www.github.com",
 			"release": "https://www.release.com"
 		},
-		"images": {
-			"main": "https://www.google.com",
-			"alt": "https://www.google.com"
-		}
+		"logo": "https://www.google.com",
+		"video": "https://www.youtube.com"
+	},
+	{
+		"name": "test2",
+		"year": 2010,
+		"type": "School Project",
+		"desc": "This is a super testing project",
+		"tech": [
+			"HTML",
+			"CSS",
+			"JavaScript"
+		],
+		"links": {
+			"title": "https://www.google.com",
+			"github": "https://www.github.com",
+			"release": "https://www.release.com"
+		},
+		"logo": "https://www.google.com",
+		"video": "https://www.youtube.com"
 	}
-}
+]

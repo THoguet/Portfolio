@@ -39,6 +39,10 @@ export default defineComponent({
 </template>
 
 <style scoped>
+main {
+	display: grid;
+}
+
 .links ol {
 	list-style: none;
 	display: flex;
