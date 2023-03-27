@@ -46,7 +46,6 @@ export default defineComponent({
 			nbProjects: 0,
 			projects: [] as Project[],
 			fullscreen: false,
-			gap: "20vw"
 		};
 	},
 	methods: {
@@ -60,7 +59,6 @@ export default defineComponent({
 			switch (inViewPort) {
 				case STATUS.BEFOREVIEWPORT:
 					this.fullscreen = false
-					this.gap = "20vw"
 					timelineSticky.style.position = 'absolute';
 					timelineSticky.style.top = '10vh';
 					timelineSticky.style.bottom = '';
@@ -68,7 +66,6 @@ export default defineComponent({
 					break;
 				case STATUS.INVIEWPORT:
 					this.fullscreen = true
-					this.gap = ""
 					timelineSticky.style.position = 'fixed';
 					timelineSticky.style.top = '10vh';
 					timelineSticky.style.bottom = '10vh';
@@ -77,7 +74,6 @@ export default defineComponent({
 					break;
 				case STATUS.AFTERVIEWPORT:
 					this.fullscreen = false
-					this.gap = "20vw"
 					timelineSticky.style.position = 'absolute';
 					timelineSticky.style.top = '';
 					timelineSticky.style.bottom = '10vh';
@@ -130,6 +126,5 @@ export default defineComponent({
 	right: 0;
 	will-change: transform;
 	transition: transform 0.1s;
-	gap: v-bind(gap)
 }
 </style>

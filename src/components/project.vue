@@ -3,9 +3,12 @@
 		<h1>{{ project.name }}</h1>
 		<div class="info">
 			<p>{{ project.desc }}</p>
-			<video>
-				<source :src="project.video" type="video/mp4" />
-			</video>
+			<a :href="project.links['title']" target="_blank">
+				<!-- autoplay  -->
+				<video autoplay loop muted>
+					<source :src="project.video" type="video/mp4" />
+				</video>
+			</a>
 		</div>
 	</div>
 </template>
@@ -35,17 +38,14 @@ export default defineComponent({
 	},
 	data() {
 		return {
-			width: '80vw',
 			height: '80vh',
 		};
 	},
 	watch: {
 		fullscreen: function (val) {
 			if (val) {
-				this.width = '100vw';
 				this.height = '100vh';
 			} else {
-				this.width = '80vw';
 				this.height = '80vh';
 			}
 		},
@@ -56,7 +56,7 @@ export default defineComponent({
 
 <style scoped>
 .project {
-	width: v-bind(width);
+	width: 100vw;
 	height: v-bind(height);
 	background-color: v-bind(color);
 	display: flex;
@@ -74,6 +74,7 @@ h1 {
 p {
 	color: black;
 	font-size: 1.5em;
+	z-index: 10;
 }
 
 video {
@@ -81,8 +82,16 @@ video {
 	height: 100%;
 }
 
+a {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+	z-index: 1;
+}
+
 .info {
-	width: 50%;
+	width: 90%;
 	font-family: montserrat_regular;
 	display: flex;
 	align-items: center;
@@ -94,6 +103,29 @@ video {
 	background-color: gray;
 	padding: 25px;
 	border-radius: 15px;
-	margin-right: -35px;
+}
+
+/* if the screen is wider than tall */
+@media screen and (orientation: landscape) {
+	.info p {
+		margin-right: -35px;
+		height: 90%;
+	}
+
+	.info {
+		flex-direction: row;
+	}
+}
+
+/* if the screen is taller than wide */
+@media screen and (orientation: portrait) {
+	.info p {
+		margin-bottom: -35px;
+		width: 90%;
+	}
+
+	.info {
+		flex-direction: column;
+	}
 }
 </style>
