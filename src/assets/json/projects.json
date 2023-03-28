@@ -25,7 +25,9 @@
 		"tech": [
 			"HTML",
 			"CSS",
-			"JavaScript"
+			"JavaScript",
+			"Vue",
+			"Typescript"
 		],
 		"links": {
 			"title": "https://www.google.com",
@@ -57,7 +59,7 @@
 		"name": "test2",
 		"year": 2010,
 		"type": "School Project",
-		"desc": "This is a super testing project",
+		"desc": "This is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing project",
 		"tech": [
 			"HTML",
 			"CSS",
