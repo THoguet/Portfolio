@@ -6,6 +6,8 @@
 			<div class="timeline bg" id="timeline">
 				<project v-for="(p, id) in projects" :project="p" :fullscreen="fullscreen"
 					:color="COLORS[id % COLORS.length]" />
+				<OtherProjects v-if="nbTotalProjects > nbMaxProjectsFullPage" v-for="(p, id) in splitOtherProjects()"
+					:projects="p" :fullscreen="fullscreen" :colors="COLORS" />
 			</div>
 		</div>
 	</div>
@@ -15,6 +17,7 @@
 import { defineComponent } from 'vue';
 import type { Project } from '@/assets/ts/project';
 import project from './project.vue';
+import OtherProjects from './otherProjects.vue';
 </script>
 
 <script lang="ts">
@@ -26,67 +29,114 @@ const enum STATUS {
 }
 const COLORS = ["#DDF9C1", "#F8DDA4", "#F9A03F", "#D45113", "#813405"]
 
+const nbMaxProjectsFullPage = 6;
 
 export default defineComponent({
-	name: 'timeline',
+	name: "timeline",
 	created() {
-		window.addEventListener('scroll', this.handleScroll);
+		window.addEventListener("scroll", this.handleScroll);
+		window.addEventListener("resize", this.handleResize);
+		this.handleResize();
 		fetch("src/assets/json/projects.json")
 			.then(response => response.json())
 			.then((data: Project[]) => {
-				this.projects = data;
-				this.nbProjects = data.length;
+				this.nbTotalProjects = data.length;
+				if (this.nbTotalProjects <= nbMaxProjectsFullPage) {
+					this.projects = data;
+					this.nbProjectPage = this.nbTotalProjects;
+				}
+				else {
+					this.projects = data.slice(0, nbMaxProjectsFullPage);
+					this.otherProjects = data.slice(nbMaxProjectsFullPage);
+					this.calcNbPage();
+				}
 			})
 			.catch((error) => {
-				console.error('Error:', error);
+				console.error("Error:", error);
 			});
+	},
+	beforeUnmount() {
+		window.removeEventListener("resize", this.handleResize);
+		window.removeEventListener("scroll", this.handleScroll);
 	},
 	data() {
 		return {
-			nbProjects: 0,
+			nbProjectPage: 0,
+			nbTotalProjects: 0,
+			nbOtherProjectsByPage: 0,
 			projects: [] as Project[],
+			otherProjects: [] as Project[],
 			fullscreen: false,
 		};
 	},
 	methods: {
 		handleScroll(event: Event) {
-			const timelineSticky = document.getElementById('timelineSticky');
-			const timeline = document.getElementById('timeline');
-			const timeLineOuter = document.getElementById('timeLineOuter');
-			if (!timelineSticky || !timeline || !timeLineOuter) return;
+			const timelineSticky = document.getElementById("timelineSticky");
+			const timeline = document.getElementById("timeline");
+			const timeLineOuter = document.getElementById("timeLineOuter");
+			if (!timelineSticky || !timeline || !timeLineOuter)
+				return;
 			const rect = timeLineOuter.getBoundingClientRect();
 			const inViewPort = this.isTimelineInViewport();
 			switch (inViewPort) {
 				case STATUS.BEFOREVIEWPORT:
-					this.fullscreen = false
-					timelineSticky.style.position = 'absolute';
-					timelineSticky.style.top = '10vh';
-					timelineSticky.style.bottom = '';
+					this.fullscreen = false;
+					timelineSticky.style.position = "absolute";
+					timelineSticky.style.top = "10vh";
+					timelineSticky.style.bottom = "";
 					timeline.style.transform = `translateX(0px)`;
 					break;
 				case STATUS.INVIEWPORT:
-					this.fullscreen = true
-					timelineSticky.style.position = 'fixed';
-					timelineSticky.style.top = '10vh';
-					timelineSticky.style.bottom = '10vh';
+					this.fullscreen = true;
+					timelineSticky.style.position = "fixed";
+					timelineSticky.style.top = "10vh";
+					timelineSticky.style.bottom = "10vh";
 					// translate the timeline to the right by the amount of scroll
 					timeline.style.transform = `translateX(${-rect.top}px)`;
 					break;
 				case STATUS.AFTERVIEWPORT:
-					this.fullscreen = false
-					timelineSticky.style.position = 'absolute';
-					timelineSticky.style.top = '';
-					timelineSticky.style.bottom = '10vh';
-					const widthByProject = timeline.getBoundingClientRect().width / this.nbProjects;
-					timeline.style.transform = `translateX(${widthByProject * (this.nbProjects - 1)}px)`;
+					this.fullscreen = false;
+					timelineSticky.style.position = "absolute";
+					timelineSticky.style.top = "";
+					timelineSticky.style.bottom = "10vh";
+					const widthByProject = timeline.getBoundingClientRect().width / this.nbProjectPage;
+					timeline.style.transform = `translateX(${widthByProject * (this.nbProjectPage - 1)}px)`;
 					break;
 			}
-			timelineSticky.style.width = '100vw';
-			timelineSticky.style.height = '80vh';
+			timelineSticky.style.width = "100vw";
+			timelineSticky.style.height = "80vh";
+		},
+		handleResize() {
+			const w = window.innerWidth;
+			const h = window.innerHeight;
+			if (h <= 600 || w <= 600) {
+				this.nbOtherProjectsByPage = 4;
+			}
+			else if (h <= 900 || w <= 900) {
+				this.nbOtherProjectsByPage = 6;
+			}
+			else {
+				this.nbOtherProjectsByPage = 8;
+			}
+			this.calcNbPage();
+		},
+		calcNbPage() {
+			if (this.nbTotalProjects > nbMaxProjectsFullPage) {
+				const otherProjects = this.nbTotalProjects - nbMaxProjectsFullPage;
+				this.nbProjectPage = nbMaxProjectsFullPage + Math.ceil(otherProjects / this.nbOtherProjectsByPage);
+			}
+		},
+		splitOtherProjects() {
+			var result = [];
+			for (var i = 0; i < this.otherProjects.length; i += this.nbOtherProjectsByPage) {
+				result.push(this.otherProjects.slice(i, i + this.nbOtherProjectsByPage));
+			}
+			return result;
 		},
 		isTimelineInViewport(): STATUS {
-			const timeLineOuter = document.getElementById('timeLineOuter');
-			if (!timeLineOuter) return STATUS.BEFOREVIEWPORT;
+			const timeLineOuter = document.getElementById("timeLineOuter");
+			if (!timeLineOuter)
+				return STATUS.BEFOREVIEWPORT;
 			const rect = timeLineOuter.getBoundingClientRect();
 			if (rect.top < 0 && rect.bottom > window.innerHeight)
 				return STATUS.INVIEWPORT;
@@ -110,11 +160,11 @@ export default defineComponent({
 .timeLineOuter {
 	position: relative;
 	width: 100vw;
-	height: calc(100vw * v-bind(nbProjects - 1) + 100vh);
+	height: calc(100vw * v-bind(nbProjectPage - 1) + 100vh);
 }
 
 .timeline {
-	width: calc(100vw*v-bind(nbProjects));
+	width: calc(100vw*v-bind(nbProjectPage));
 	height: 80Vh;
 	display: flex;
 	align-items: center;
@@ -122,9 +172,19 @@ export default defineComponent({
 	flex-direction: row-reverse;
 	flex-wrap: nowrap;
 	position: absolute;
-	left: calc(-100vw*v-bind(nbProjects - 1));
+	left: calc(-100vw*v-bind(nbProjectPage - 1));
 	right: 0;
 	will-change: transform;
 	transition: transform 0.1s;
+}
+
+:deep(a:hover:not(.videoPreview)) {
+	filter: invert(100%);
+}
+
+
+:deep(.icon) {
+	max-width: 40px;
+	max-height: 40px;
 }
 </style>

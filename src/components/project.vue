@@ -114,9 +114,6 @@ export default defineComponent({
 	text-decoration: none;
 }
 
-:deep(a:hover:not(.videoPreview)) {
-	filter: invert(100%);
-}
 
 .title h1 {
 	transition: color 0.5s;
@@ -133,10 +130,6 @@ export default defineComponent({
 	font-size: 1.5em;
 }
 
-:deep(.icon) {
-	max-width: 40px;
-	max-height: 40px;
-}
 
 .desc {
 	color: black;

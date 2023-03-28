@@ -1,13 +1,15 @@
 <template>
 	<div class="techLinks">
-		<div class="techs">
+		<div class="techs" v-if="onlyImageData">
 			<a v-for="tech in project.tech" :href="getTechLink(tech)">{{ tech }}</a>
 		</div>
-		<div class="images">
-			<a class="tooltip" v-if="'github' in project.links" :href="project.links['github']" title="See the code"><img
-					src="src/assets/images/github.svg" alt="GitHub" class="icon" /></a>
-			<a class="tooltip" v-if="'release' in project.links" :href="project.links['release']"
-				title="Test the program"><img src="src/assets/images/check.svg" alt="Release" class="icon" /></a>
+		<div class="images" v-if="onlyTechsData">
+			<a class="tooltip" v-if="'github' in project.links" :href="project.links['github']" title="See the code">
+				<img src="src/assets/images/github.svg" alt="GitHub" class="icon" />
+			</a>
+			<a class="tooltip" v-if="'release' in project.links" :href="project.links['release']" title="Test the program">
+				<img src="src/assets/images/check.svg" alt="Release" class="icon" />
+			</a>
 		</div>
 	</div>
 </template>
@@ -23,7 +25,27 @@ export default defineComponent({
 		project: {
 			type: Object as () => Project,
 			required: true,
+		},
+		onlyImage: {
+			type: Boolean,
+		},
+		onlyTechs: {
+			type: Boolean,
+		},
+	},
+	created() {
+		if (this.onlyImage) {
+			this.onlyTechsData = true;
 		}
+		if (this.onlyTechs) {
+			this.onlyImageData = true;
+		}
+	},
+	data() {
+		return {
+			onlyImageData: false,
+			onlyTechsData: false,
+		};
 	},
 });
 </script>
