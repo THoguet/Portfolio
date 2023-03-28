@@ -106,7 +106,6 @@ export default defineComponent({
 	width: 100%;
 }
 
-/* landsacpe */
 @media (orientation: landscape) {
 	@media (max-height: 600px) {
 		.other {
@@ -126,25 +125,4 @@ export default defineComponent({
 		}
 	}
 }
-
-/* portrait */
-/* @media (orientation: portrait) {
-	@media (max-width: 600px) {
-		.other {
-			max-width: 23vw;
-		}
-	}
-
-	@media (max-width: 900px) and (min-width: 600px) {
-		.other {
-			min-width: 27vw;
-		}
-	}
-
-	@media (min-width: 900px) {
-		.other {
-			min-width: 20vw;
-		}
-	}
-} */
 </style>
