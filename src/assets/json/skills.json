@@ -29,6 +29,14 @@
 			{
 				"name": "Unix",
 				"logo": "src/assets/logos/unix.svg"
+			},
+			{
+				"name": "Gradle",
+				"logo": "src/assets/logos/gradle.svg"
+			},
+			{
+				"name": "Maven",
+				"logo": "src/assets/logos/maven.svg"
 			}
 		]
 	},

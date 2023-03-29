@@ -44,8 +44,8 @@ export default defineComponent({
 
 
 .social img {
-	width: 5vw;
-	height: 5vw;
+	width: max(5vw, 7vh);
+	height: max(5vw, 7vh);
 	object-fit: contain;
 	padding: 15px;
 }

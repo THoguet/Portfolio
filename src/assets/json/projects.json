@@ -1,256 +1,39 @@
 [
 	{
-		"name": "test1",
-		"year": 2021,
-		"type": "School Project",
-		"desc": "This is a test project",
+		"name": "Portfolio",
+		"year": 2023,
+		"type": "Personal Project",
+		"desc": "A website to showcase my work and skills.",
 		"tech": [
+			"VueJs",
+			"Typescript",
 			"HTML",
-			"CSS",
-			"JavaScript"
+			"CSS"
 		],
 		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
+			"title": "https://theophylhoguet.fr",
+			"github": "https://github.com/THoguet/Portfolio",
+			"release": "https://theophylhoguet.fr"
 		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+		"logo": "src/assets/logos/projects/portfolio.svg",
+		"video": "src/assets/videos/portfolio.mp4"
 	},
 	{
-		"name": "test2",
-		"year": 2010,
+		"name": "U-Bomb",
+		"year": 2022,
 		"type": "School Project",
-		"desc": "This is a super testing project",
+		"desc": "A bomber like game made with Java and JavaFX. First time with POO langage.",
 		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript",
-			"Vue",
-			"Typescript"
+			"Java",
+			"JavaFX",
+			"Gradle"
 		],
 		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
+			"title": "https://github.com/THoguet/Ubomb2022/",
+			"github": "https://github.com/THoguet/Ubomb2022/",
+			"release": "https://github.com/THoguet/Ubomb2022/releases/tag/V1.0"
 		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing projectThis is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-	},
-	{
-		"name": "test2",
-		"year": 2010,
-		"type": "School Project",
-		"desc": "This is a super testing project",
-		"tech": [
-			"HTML",
-			"CSS",
-			"JavaScript"
-		],
-		"links": {
-			"title": "https://www.google.com",
-			"github": "https://www.github.com",
-			"release": "https://www.release.com"
-		},
-		"logo": "https://www.google.com",
-		"video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+		"logo": "src/assets/logos/projects/ubomb.svg",
+		"video": "src/assets/videos/ubomb.mp4"
 	}
 ]

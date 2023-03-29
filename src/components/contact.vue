@@ -52,6 +52,7 @@ export default defineComponent({
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 5vw;
 }
 

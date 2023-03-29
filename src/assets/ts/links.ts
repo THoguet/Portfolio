@@ -86,6 +86,8 @@ export const links: { [key: string]: string } = {
 	"gitlab": 'https://gitlab.com/',
 	"sql": 'https://en.wikipedia.org/wiki/SQL',
 	"vite": 'https://vitejs.dev/',
+	"gradle": 'https://gradle.org/',
+	"maven": 'https://maven.apache.org/',
 }
 
 export function getTechLink(tech: string): string {

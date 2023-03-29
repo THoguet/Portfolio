@@ -43,12 +43,88 @@ export default defineComponent({
 		<skills />
 		<transi color="var(--white)" spacer-before-color="var(--white)" spacer-after-color="var(--black)" />
 		<contact />
+		<transi color="var(--black)" spacer-before-color="var(--black)" spacer-after-color="var(--white)" />
 	</main>
+	<footer>
+		<div class="CCSource">
+			<div class="CC">
+				<p>© 2023 Théophyl Hoguet</p>
+				<img class="littleIcon blackSvg" src="src/assets/logos/license.svg">
+				<p> MIT License</p>
+			</div>
+			<div class="source">
+				<a href="https://github.com/THoguet/Portfolio">
+					<p>All the code is available on Github</p>
+					<img src="src/assets/logos/github.svg" class="littleIcon" />
+				</a>
+			</div>
+		</div>
+		<div class="text">
+			<p>Made by Théophyl Hoguet using Vue.js and TypeScript.<br> Hope you liked it !</p>
+		</div>
+	</footer>
 </template>
 
 <style scoped>
+* {
+	font-family: montserrat_semi_bold;
+
+}
+
 main {
 	display: grid;
+}
+
+footer {
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1em;
+	height: 30vh;
+}
+
+.CCSource {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 75%;
+}
+
+.text {
+	text-align: center;
+}
+
+.source a {
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	color: var(--black);
+	text-decoration: none;
+}
+
+.source a:hover p {
+	font-weight: bold;
+}
+
+.CC {
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+.blackSvg {
+	filter: invert(100%);
+}
+
+.littleIcon {
+	margin: 0 0.5em 0 0.5em;
+	width: 1.5em;
+	height: 1.5em;
 }
 
 .links ol {

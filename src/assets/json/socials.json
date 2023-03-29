@@ -16,5 +16,11 @@
 		"name": "theophyl.hoguet@gmail.com",
 		"icon": "src/assets/logos/mail.svg",
 		"link": "mailto:theophyl.hoguet@gmail.com"
+	},
+	{
+		"platform": "Phone",
+		"name": "+33 6 63 63 73 32",
+		"icon": "src/assets/images/phone.svg",
+		"link": "tel:+33663637332"
 	}
 ]
