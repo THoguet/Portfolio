@@ -6,6 +6,8 @@ import transi from "./components/transi.vue";
 import about from "@/components/about.vue";
 import timeline from "@/components/timeline.vue";
 import skills from "@/components/skills.vue";
+import contact from "./components/contact.vue";
+import type contactVue from "./components/contact.vue";
 const particlesInit = async (engine: Engine) => {
 	await loadFull(engine);
 };
@@ -13,7 +15,7 @@ const particlesInit = async (engine: Engine) => {
 <script lang="ts">
 
 export default defineComponent({
-	name: 'App',
+	name: "App",
 });
 
 </script>
@@ -39,6 +41,8 @@ export default defineComponent({
 		<timeline />
 		<transi color="var(--black)" spacer-before-color="var(--black)" spacer-after-color="var(--white)" />
 		<skills />
+		<transi color="var(--white)" spacer-before-color="var(--white)" spacer-after-color="var(--black)" />
+		<contact />
 	</main>
 </template>
 

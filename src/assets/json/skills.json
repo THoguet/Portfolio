@@ -127,6 +127,10 @@
 		"category": "Design",
 		"skills": [
 			{
+				"name": "Paint.net",
+				"logo": "src/assets/logos/paintnet.png"
+			},
+			{
 				"name": "Photoshop",
 				"logo": "src/assets/logos/photoshop.svg"
 			},

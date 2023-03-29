@@ -66,10 +66,13 @@ export default defineComponent({
 	color: var(--black);
 	font-size: max(1vw, 1vh);
 	border-radius: 15px;
+	transition: 0.2s;
+	font-family: montserrat_semi_bold;
 }
 
 .skill a:hover {
 	transform: scale(1.1);
+	transition: 0.2s;
 }
 
 .logo {

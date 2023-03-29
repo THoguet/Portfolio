@@ -1,4 +1,5 @@
 <template>
+	<a id="skills" />
 	<div class="bg">
 		<h1 class="title"> What are my skills ?</h1>
 		<div class="tab" v-if="!mobile">
@@ -84,7 +85,7 @@ export default defineComponent({
 	font-size: 2.5em;
 	font-weight: 600;
 	color: var(--black);
-	margin: 0;
+	margin-bottom: 1em;
 }
 
 .allSkills {
@@ -129,6 +130,7 @@ export default defineComponent({
 	align-content: center;
 	justify-content: center;
 	flex-direction: column;
+	font-family: montserrat_semi_bold;
 }
 
 .category {
@@ -136,6 +138,7 @@ export default defineComponent({
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .category a {

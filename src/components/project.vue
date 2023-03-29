@@ -1,4 +1,5 @@
 <template>
+	<a id="projects" />
 	<div class="project">
 		<div class="title">
 			<h2 class="year">{{ project.year }}</h2>
