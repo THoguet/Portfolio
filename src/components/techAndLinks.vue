@@ -16,7 +16,8 @@
 
 <script setup lang="ts">
 import { defineComponent } from 'vue';
-import { getTechLink, type Project } from '@/assets/ts/project';
+import type { Project } from '@/assets/ts/project';
+import { getTechLink } from '@/assets/ts/links';
 </script>
 <script lang="ts">
 export default defineComponent({
@@ -73,7 +74,7 @@ export default defineComponent({
 .images img {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
-	border: 1px solid black;
+	border: 1px solid var(--black);
 }
 
 .techs {
@@ -85,7 +86,7 @@ export default defineComponent({
 }
 
 .techs a {
-	color: black;
+	color: var(--black);
 	font-weight: bold;
 	z-index: 10;
 }

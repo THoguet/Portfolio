@@ -2,6 +2,7 @@
 import type { Engine } from "tsparticles-engine";
 import { defineComponent } from 'vue';
 import { loadFull } from "tsparticles";
+import transi from "./components/transi.vue";
 import about from "@/components/about.vue";
 import timeline from "@/components/timeline.vue";
 import skills from "@/components/skills.vue";
@@ -34,7 +35,9 @@ export default defineComponent({
 	</header>
 	<main>
 		<about />
+		<transi color="var(--black)" spacer-before-color="#2c3260" spacer-after-color="var(--black)" />
 		<timeline />
+		<transi color="var(--black)" spacer-before-color="var(--black)" spacer-after-color="var(--white)" />
 		<skills />
 	</main>
 </template>
@@ -53,7 +56,7 @@ main {
 }
 
 .links a {
-	color: white;
+	color: var(--white);
 	text-decoration: none;
 	font-family: raleway_semi_bold;
 	font-size: large;
@@ -86,12 +89,12 @@ nav .logo {
 header {
 	height: 100vh;
 	width: 100vw;
-	background: radial-gradient(ellipse at bottom, #292929 0%, #000000 100%)
+	background: radial-gradient(ellipse at bottom, var(--black) 0%, #000000 100%)
 }
 
 
 main {
 	width: 100vw;
-	background: rgb(29, 29, 29);
+	background: var(--black);
 }
 </style>

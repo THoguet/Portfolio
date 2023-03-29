@@ -1,5 +1,4 @@
 <template>
-	<div class="spacer bg" />
 	<a id="projects" />
 	<div class="timeLineOuter bg" id="timeLineOuter">
 		<div id="timelineSticky">
@@ -149,12 +148,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.spacer {
-	height: 20vh !important;
-}
-
 .bg {
-	background-color: #292929;
+	background-color: var(--black);
 }
 
 .timeLineOuter {

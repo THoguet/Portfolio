@@ -2,7 +2,9 @@
 	<div class="project">
 		<div class="other" v-for="(p, id) in projects" :style="'background-color:' + colors[id % colors.length] + ';'">
 			<techAndLinks :project="p" class="icons" :only-image="true" />
-			<h1>{{ p.name }}</h1>
+			<a class="title" :href="p.links['title']">
+				<h1>{{ p.name }}</h1>
+			</a>
 			<h2>{{ p.type }}</h2>
 			<techAndLinks :project="p" class="links" :only-techs="true" />
 			<p>{{ p.desc }}</p>
@@ -83,7 +85,7 @@ export default defineComponent({
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	color: black;
+	color: var(--black);
 	border-radius: 10px;
 	padding: min(1vh, 1vw);
 	text-align: center;
@@ -96,6 +98,25 @@ export default defineComponent({
 	padding: 0.5vw;
 	margin: 0;
 	width: 100%;
+}
+
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	text-decoration: none;
+}
+
+.title h1 {
+	transition: color 0.5s;
+	color: var(--black);
+	font-size: 2.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
 }
 
 .links {

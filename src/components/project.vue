@@ -117,7 +117,7 @@ export default defineComponent({
 
 .title h1 {
 	transition: color 0.5s;
-	color: black;
+	color: var(--black);
 	font-size: 2.5em;
 	display: flex;
 	align-items: center;
@@ -126,13 +126,13 @@ export default defineComponent({
 }
 
 .title h2 {
-	color: black;
+	color: var(--black);
 	font-size: 1.5em;
 }
 
 
 .desc {
-	color: black;
+	color: var(--black);
 	font-size: 1.5em;
 	z-index: 10;
 	background-color: gray;

@@ -38,12 +38,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="transi">
-	</div>
 </template>
 
 <script setup lang="ts">
-
+import transi from './transi.vue';
 </script>
 
 <style scoped>
@@ -52,14 +50,6 @@
 	font-family: montserrat_regular;
 }
 
-.transi {
-	height: 8vw;
-	width: 100%;
-	margin: -4vw 0 -4vw 0;
-	background-color: rgb(29, 29, 29);
-	transform: rotate(-4deg) scale(1.2, 1);
-	z-index: 1;
-}
 
 .about {
 	display: flex;
@@ -67,8 +57,8 @@
 	flex-direction: column;
 	gap: 20px;
 	padding: 4vw 0 4vw 0;
-	margin-bottom: 4vw;
 	font-family: montserrat_semi_bold;
+	background-color: #2c3260;
 }
 
 .photoInfo {
@@ -80,7 +70,7 @@
 }
 
 .about {
-	color: white;
+	color: var(--white);
 }
 
 .about a {
