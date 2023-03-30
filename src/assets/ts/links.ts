@@ -88,6 +88,7 @@ export const links: { [key: string]: string } = {
 	"vite": 'https://vitejs.dev/',
 	"gradle": 'https://gradle.org/',
 	"maven": 'https://maven.apache.org/',
+	"webassembly": 'https://webassembly.org/',
 }
 
 export function getTechLink(tech: string): string {

@@ -3,7 +3,7 @@
 		"name": "Portfolio",
 		"year": 2023,
 		"type": "Personal Project",
-		"desc": "A website to showcase my work and skills.",
+		"desc": "A website to showcase my work and skills. Made with VueJs and Typescript, responsive and accessible.",
 		"tech": [
 			"VueJs",
 			"Typescript",
@@ -22,7 +22,7 @@
 		"name": "U-Bomb",
 		"year": 2022,
 		"type": "School Project",
-		"desc": "A bomber like game made with Java and JavaFX. First time with POO langage.",
+		"desc": "A bomber like game with a map editor and A* pathfinding AI for monsters, made with Java and JavaFX. First time with POO langage.",
 		"tech": [
 			"Java",
 			"JavaFX",
@@ -35,5 +35,77 @@
 		},
 		"logo": "src/assets/logos/projects/ubomb.svg",
 		"video": "src/assets/videos/ubomb.mp4"
+	},
+	{
+		"name": "Polyglot TicTacToe",
+		"year": 2022,
+		"type": "Personal Project",
+		"desc": "A side project to show langages I know, for each language there is the time spend, installation steps, tests, a CLI game and a GUI game.",
+		"tech": [
+			"C",
+			"python",
+			"C++",
+			"Java",
+			"Typescript",
+			"C#"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/polyglot_tictactoe/",
+			"github": "https://github.com/THoguet/polyglot_tictactoe/"
+		},
+		"logo": "src/assets/logos/projects/tictactoe.svg",
+		"video": "src/assets/videos/tictactoe.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "src/assets/logos/projects/lightup.svg",
+		"video": "src/assets/videos/lightup.mp4"
+	},
+	{
+		"name": "WebSite with Flask",
+		"year": 2020,
+		"type": "Personal Project",
+		"desc": "I had already made a website with vanilla HTML and CSS, but i learnt with school how to use Flask, so I made a website with Flask and Jinja. Also I made an API to access university calendar events from my Google Calendar.",
+		"tech": [
+			"Python",
+			"Flask"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/flaskwebsite/",
+			"github": "https://github.com/THoguet/flaskwebsite/",
+			"release": "https://nessar.fr/"
+		},
+		"logo": "src/assets/logos/projects/flask.svg",
+		"video": "src/assets/videos/flask.mp4"
+	},
+	{
+		"name": "Bots for a Teamspeak Server",
+		"year": 2016,
+		"type": "Personal Project",
+		"desc": "With my friends we had a Teamspeak Server, and I saw that there was an api to access functions of the server, so I made a bot to move AFK people in a channel, and a bot to move people in a channel when they were talking, to assign roles to people.",
+		"tech": [
+			"Python"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/BOTTS/",
+			"github": "https://github.com/THoguet/BOTTS/"
+		},
+		"logo": "src/assets/logos/projects/botts.svg",
+		"video": "src/assets/videos/botts.mp4"
 	}
 ]

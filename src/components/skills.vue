@@ -73,6 +73,7 @@ export default defineComponent({
 <style scoped>
 .bg {
 	min-height: 100vh;
+	padding-bottom: 2vh;
 	background-color: var(--white);
 	display: flex;
 	align-items: center;
@@ -115,7 +116,7 @@ export default defineComponent({
 
 .tab {
 	width: 80vw;
-	height: 80vh;
+	min-height: 80vh;
 	display: flex;
 	align-items: stretch;
 	justify-content: flex-start;
@@ -125,7 +126,7 @@ export default defineComponent({
 
 .categories {
 	width: 20vw;
-	height: 100%;
+	min-height: 100%;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -143,7 +144,7 @@ export default defineComponent({
 
 .category a {
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	display: flex;
 	padding: 1vw;
 	align-items: center;

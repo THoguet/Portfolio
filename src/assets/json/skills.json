@@ -37,6 +37,10 @@
 			{
 				"name": "Maven",
 				"logo": "src/assets/logos/maven.svg"
+			},
+			{
+				"name": "WebAssembly",
+				"logo": "src/assets/logos/webassembly.svg"
 			}
 		]
 	},
