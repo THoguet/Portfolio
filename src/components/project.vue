@@ -67,9 +67,9 @@ export default defineComponent({
 		icon(input: string) {
 			switch (input) {
 				case 'School Project':
-					return 'src/assets/images/school.svg';
+					return '/ressources/images/school.svg';
 				case 'Personal Project':
-					return 'src/assets/images/perso.svg';
+					return '/ressources/images/perso.svg';
 				default:
 					return '';
 			}

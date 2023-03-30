@@ -7,7 +7,6 @@ import about from "@/components/about.vue";
 import timeline from "@/components/timeline.vue";
 import skills from "@/components/skills.vue";
 import contact from "./components/contact.vue";
-import type contactVue from "./components/contact.vue";
 const particlesInit = async (engine: Engine) => {
 	await loadFull(engine);
 };
@@ -22,9 +21,9 @@ export default defineComponent({
 
 <template>
 	<header>
-		<Particles id="tsparticles" :particlesInit="particlesInit" url="particles.json" />
+		<Particles id="tsparticles" :particlesInit="particlesInit" url="/ressources/json/particles.json" />
 		<nav>
-			<img alt="Logo" src="@/assets/images/avatarTO.svg" class="logo" />
+			<img alt="Logo" src="/ressources/images/avatarTO.svg" class="logo" />
 			<div class="links">
 				<ol>
 					<li><a href="#about">About</a></li>
@@ -49,13 +48,13 @@ export default defineComponent({
 		<div class="CCSource">
 			<div class="CC">
 				<p>© 2023 Théophyl Hoguet</p>
-				<img class="littleIcon blackSvg" src="src/assets/logos/license.svg">
+				<img class="littleIcon blackSvg" src="/ressources/logos/license.svg">
 				<p> MIT License</p>
 			</div>
 			<div class="source">
 				<a href="https://github.com/THoguet/Portfolio">
 					<p>All the code is available on Github</p>
-					<img src="src/assets/logos/github.svg" class="littleIcon" />
+					<img src="/ressources/logos/github.svg" class="littleIcon" />
 				</a>
 			</div>
 		</div>

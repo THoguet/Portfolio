@@ -6,11 +6,11 @@
 		<div class="images" v-if="!onlyTechsData">
 			<a class="tooltip" v-if="'github' in project.links" :href="project.links['github']" target="_blank"
 				title="See the code">
-				<img src="src/assets/logos/github.svg" alt="GitHub" class="icon" />
+				<img src="/ressources/logos/github.svg" alt="GitHub" class="icon" />
 			</a>
 			<a class="tooltip" v-if="'release' in project.links" :href="project.links['release']" target="_blank"
 				title="Test the program">
-				<img src="src/assets/images/check.svg" alt="Release" class="icon" />
+				<img src="/ressources/images/check.svg" alt="Release" class="icon" />
 			</a>
 		</div>
 	</div>

@@ -4,7 +4,7 @@
 		<h1>Hi, I'm <span class="name">Théophyl</span></h1>
 		<div class="photoInfo">
 			<div class="imagePerso">
-				<img src="@/assets/images/proCircleBlur.png" alt="Photo de moi" />
+				<img src="/ressources/images/proCircleBlur.png" alt="Photo de moi" />
 			</div>
 			<div class="info">
 				<p>

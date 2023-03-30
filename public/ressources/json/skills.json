@@ -1,0 +1,163 @@
+[
+	{
+		"category": "Software Developpement",
+		"skills": [
+			{
+				"name": "C",
+				"logo": "/ressources/logos/c.svg"
+			},
+			{
+				"name": "Java",
+				"logo": "/ressources/logos/java.svg"
+			},
+			{
+				"name": "Python",
+				"logo": "/ressources/logos/python.svg"
+			},
+			{
+				"name": "Ocaml",
+				"logo": "/ressources/logos/ocaml.svg"
+			},
+			{
+				"name": "CMake",
+				"logo": "/ressources/logos/cmake.svg"
+			},
+			{
+				"name": "Git",
+				"logo": "/ressources/logos/git.svg"
+			},
+			{
+				"name": "Unix",
+				"logo": "/ressources/logos/unix.svg"
+			},
+			{
+				"name": "Gradle",
+				"logo": "/ressources/logos/gradle.svg"
+			},
+			{
+				"name": "Maven",
+				"logo": "/ressources/logos/maven.svg"
+			},
+			{
+				"name": "WebAssembly",
+				"logo": "/ressources/logos/webassembly.svg"
+			}
+		]
+	},
+	{
+		"category": "Front-End Web",
+		"skills": [
+			{
+				"name": "HTML",
+				"logo": "/ressources/logos/html.svg"
+			},
+			{
+				"name": "CSS",
+				"logo": "/ressources/logos/css.svg"
+			},
+			{
+				"name": "Javascript",
+				"logo": "/ressources/logos/javascript.svg"
+			},
+			{
+				"name": "Typescript",
+				"logo": "/ressources/logos/typescript.svg"
+			},
+			{
+				"name": "VueJs",
+				"logo": "/ressources/logos/vuejs.svg"
+			},
+			{
+				"name": "Vite",
+				"logo": "/ressources/logos/vite.svg"
+			},
+			{
+				"name": "PHP",
+				"logo": "/ressources/logos/php.svg"
+			},
+			{
+				"name": "Git",
+				"logo": "/ressources/logos/git.svg"
+			}
+		]
+	},
+	{
+		"category": "Back-End Web",
+		"skills": [
+			{
+				"name": "SpringBoot",
+				"logo": "/ressources/logos/springboot.svg"
+			},
+			{
+				"name": "Flask",
+				"logo": "/ressources/logos/flask.svg"
+			},
+			{
+				"name": "Javascript",
+				"logo": "/ressources/logos/javascript.svg"
+			},
+			{
+				"name": "Typescript",
+				"logo": "/ressources/logos/typescript.svg"
+			},
+			{
+				"name": "Django",
+				"logo": "/ressources/logos/django.svg"
+			},
+			{
+				"name": "MySQL",
+				"logo": "/ressources/logos/mysql.svg"
+			},
+			{
+				"name": "MongoDB",
+				"logo": "/ressources/logos/mongodb.svg"
+			},
+			{
+				"name": "Git",
+				"logo": "/ressources/logos/git.svg"
+			}
+		]
+	},
+	{
+		"category": "Computer Graphics",
+		"skills": [
+			{
+				"name": "SDL2",
+				"logo": "/ressources/logos/sdl2.svg"
+			},
+			{
+				"name": "JavaFX",
+				"logo": "/ressources/logos/javafx.svg"
+			},
+			{
+				"name": "PyGame",
+				"logo": "/ressources/logos/pygame.svg"
+			}
+		]
+	},
+	{
+		"category": "Design",
+		"skills": [
+			{
+				"name": "Paint.net",
+				"logo": "/ressources/logos/paintnet.png"
+			},
+			{
+				"name": "Photoshop",
+				"logo": "/ressources/logos/photoshop.svg"
+			},
+			{
+				"name": "Illustrator",
+				"logo": "/ressources/logos/illustrator.svg"
+			},
+			{
+				"name": "Premiere",
+				"logo": "/ressources/logos/premiere.svg"
+			},
+			{
+				"name": "After Effects",
+				"logo": "/ressources/logos/aftereffects.svg"
+			}
+		]
+	}
+]

@@ -2,25 +2,25 @@
 	{
 		"platform": "Linkedin",
 		"name": "in/theophyl-hoguet",
-		"icon": "src/assets/logos/linkedin.svg",
+		"icon": "/ressources/logos/linkedin.svg",
 		"link": "https://www.linkedin.com/in/theophyl-hoguet/"
 	},
 	{
 		"platform": "Github",
 		"name": "thoguet",
-		"icon": "src/assets/logos/github.svg",
+		"icon": "/ressources/logos/github.svg",
 		"link": "https://github.com/thoguet"
 	},
 	{
 		"platform": "Mail",
 		"name": "theophyl.hoguet@gmail.com",
-		"icon": "src/assets/logos/mail.svg",
+		"icon": "/ressources/logos/mail.svg",
 		"link": "mailto:theophyl.hoguet@gmail.com"
 	},
 	{
 		"platform": "Phone",
 		"name": "+33 6 63 63 73 32",
-		"icon": "src/assets/images/phone.svg",
+		"icon": "/ressources/images/phone.svg",
 		"link": "tel:+33663637332"
 	}
 ]

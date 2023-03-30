@@ -15,8 +15,8 @@
 			"github": "https://github.com/THoguet/Portfolio",
 			"release": "https://theophylhoguet.fr"
 		},
-		"logo": "src/assets/logos/projects/portfolio.svg",
-		"video": "src/assets/videos/portfolio.mp4"
+		"logo": "/ressources/logos/projects/portfolio.svg",
+		"video": "/ressources/videos/portfolio.mp4"
 	},
 	{
 		"name": "U-Bomb",
@@ -33,8 +33,8 @@
 			"github": "https://github.com/THoguet/Ubomb2022/",
 			"release": "https://github.com/THoguet/Ubomb2022/releases/tag/V1.0"
 		},
-		"logo": "src/assets/logos/projects/ubomb.svg",
-		"video": "src/assets/videos/ubomb.mp4"
+		"logo": "/ressources/logos/projects/ubomb.svg",
+		"video": "/ressources/videos/ubomb.mp4"
 	},
 	{
 		"name": "Polyglot TicTacToe",
@@ -53,8 +53,8 @@
 			"title": "https://github.com/THoguet/polyglot_tictactoe/",
 			"github": "https://github.com/THoguet/polyglot_tictactoe/"
 		},
-		"logo": "src/assets/logos/projects/tictactoe.svg",
-		"video": "src/assets/videos/tictactoe.mp4"
+		"logo": "/ressources/logos/projects/tictactoe.svg",
+		"video": "/ressources/videos/tictactoe.mp4"
 	},
 	{
 		"name": "LightUp",
@@ -73,8 +73,8 @@
 			"github": "https://github.com/THoguet/lightup/",
 			"release": "https://lightup.theophylhoguet.fr/"
 		},
-		"logo": "src/assets/logos/projects/lightup.svg",
-		"video": "src/assets/videos/lightup.mp4"
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
 	},
 	{
 		"name": "WebSite with Flask",
@@ -90,8 +90,8 @@
 			"github": "https://github.com/THoguet/flaskwebsite/",
 			"release": "https://nessar.fr/"
 		},
-		"logo": "src/assets/logos/projects/flask.svg",
-		"video": "src/assets/videos/flask.mp4"
+		"logo": "/ressources/logos/projects/flask.svg",
+		"video": "/ressources/videos/flask.mp4"
 	},
 	{
 		"name": "Bots for a Teamspeak Server",
@@ -105,7 +105,7 @@
 			"title": "https://github.com/THoguet/BOTTS/",
 			"github": "https://github.com/THoguet/BOTTS/"
 		},
-		"logo": "src/assets/logos/projects/botts.svg",
-		"video": "src/assets/videos/botts.mp4"
+		"logo": "/ressources/logos/projects/botts.svg",
+		"video": "/ressources/videos/botts.mp4"
 	}
 ]

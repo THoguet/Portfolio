@@ -33,7 +33,7 @@ export default defineComponent({
 	created() {
 		window.addEventListener("resize", this.isMobileView);
 		this.isMobileView();
-		fetch("src/assets/json/skills.json")
+		fetch("/ressources/json/skills.json")
 			.then(response => response.json())
 			.then((data: skillsByCat[]) => {
 				this.allskills = data;

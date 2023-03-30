@@ -23,7 +23,7 @@ export default defineComponent({
 		}
 	},
 	created() {
-		fetch("src/assets/json/socials.json")
+		fetch("/ressources/json/socials.json")
 			.then(response => response.json())
 			.then((data: Social[]) => {
 				this.socials = data;

@@ -36,7 +36,7 @@ export default defineComponent({
 		window.addEventListener("scroll", this.handleScroll);
 		window.addEventListener("resize", this.handleResize);
 		this.handleResize();
-		fetch("src/assets/json/projects.json")
+		fetch("/ressources/json/projects.json")
 			.then(response => response.json())
 			.then((data: Project[]) => {
 				this.nbTotalProjects = data.length;
