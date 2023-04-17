@@ -1,5 +1,25 @@
 [
 	{
+		"name": "SnapEdit",
+		"year": 2023,
+		"type": "School Project",
+		"desc": "A school group project to make a web app to edit images, with a lot of filters and effects. Front is made with VueJs and Typescript and the back is made with Java and SpringBoot.",
+		"tech": [
+			"VueJs",
+			"Typescript",
+			"HTML",
+			"CSS",
+			"Java",
+			"SpringBoot"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/SnapEdit",
+			"github": "https://github.com/THoguet/SnapEdit"
+		},
+		"logo": "/ressources/logos/projects/snapedit.svg",
+		"video": "/ressources/videos/snapedit.mp4"
+	},
+	{
 		"name": "Portfolio",
 		"year": 2023,
 		"type": "Personal Project",
