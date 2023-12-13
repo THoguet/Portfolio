@@ -108,10 +108,10 @@ export default defineComponent({
 		handleResize() {
 			const w = window.innerWidth;
 			const h = window.innerHeight;
-			if (h <= 600 || w <= 600) {
+			if (h <= 800 || w <= 800) {
 				this.nbOtherProjectsByPage = 4;
 			}
-			else if (h <= 900 || w <= 900) {
+			else if (h <= 1100 || w <= 1100) {
 				this.nbOtherProjectsByPage = 6;
 			}
 			else {

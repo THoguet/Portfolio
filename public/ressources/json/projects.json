@@ -133,6 +133,226 @@
 		"video": "/ressources/videos/lightup.mp4"
 	},
 	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
+		"name": "LightUp",
+		"year": 2022,
+		"type": "School Project",
+		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"tech": [
+			"C",
+			"Java",
+			"SDL2",
+			"WebAssembly",
+			"CMake"
+		],
+		"links": {
+			"title": "https://github.com/THoguet/lightup/",
+			"github": "https://github.com/THoguet/lightup/",
+			"release": "https://lightup.theophylhoguet.fr/"
+		},
+		"logo": "/ressources/logos/projects/lightup.svg",
+		"video": "/ressources/videos/lightup.mp4"
+	},
+	{
 		"name": "WebSite with Flask",
 		"year": 2020,
 		"type": "Personal Project",

@@ -2,11 +2,14 @@
 	<div class="project">
 		<div class="other" v-for="(p, id) in projects" :style="'background-color:' + colors[id % colors.length] + ';'">
 			<techAndLinks :project="p" class="icons" :only-image="true" />
-			<a class="title" :href="p.links['title']">
-				<h1>{{ p.name }}</h1>
-			</a>
-			<h2>{{ p.type }}</h2>
-			<techAndLinks :project="p" class="links" :only-techs="true" />
+			<img :src="p.logo" alt="icon" class="logo icons" />
+			<div class="infos">
+				<a class="title" :href="p.links['title']">
+					<h1>{{ p.name }}</h1>
+				</a>
+				<h2>{{ p.type }}</h2>
+				<techAndLinks :project="p" class="links" :only-techs="true" />
+			</div>
 			<p>{{ p.desc }}</p>
 		</div>
 	</div>
@@ -72,6 +75,7 @@ export default defineComponent({
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
+	align-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
 	transition: width 0.75s, height 0.75s;
@@ -81,7 +85,7 @@ export default defineComponent({
 .other {
 	max-width: 40vw;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -95,18 +99,25 @@ export default defineComponent({
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding: 0.5vw;
+	padding-top: 0.2em;
 	margin: 0;
 	width: 100%;
 }
 
-
-.title {
+.infos {
+	max-width: 75%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	width: 100%;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.title {
 	text-decoration: none;
+	text-align: start;
+	line-height: 3rem;
+	margin-top: 1em;
 }
 
 .title h1 {
@@ -114,8 +125,6 @@ export default defineComponent({
 	color: var(--black);
 	font-size: 2.5em;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 20px;
 }
 
@@ -125,6 +134,12 @@ export default defineComponent({
 	margin: 0;
 	padding: 0;
 	width: 100%;
+}
+
+.logo {
+	height: 50%;
+	max-width: 25%;
+	padding: min(1vh, 1vw);
 }
 
 @media (orientation: landscape) {
