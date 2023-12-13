@@ -1,9 +1,9 @@
 <template>
 	<div class="techLinks">
-		<div class="techs" v-if="onlyTechsData">
+		<div class="techs" v-if="!onlyImageData">
 			<a v-for="tech in project.tech" :href="getTechLink(tech)">{{ tech }}</a>
 		</div>
-		<div class="images" v-if="onlyImageData">
+		<div class="images" v-if="!onlyTechsData">
 			<a class="tooltip" v-if="'github' in project.links" :href="project.links['github']" target="_blank"
 				title="See the code">
 				<img src="/ressources/logos/github.svg" alt="GitHub" class="icon" />
