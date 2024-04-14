@@ -14,7 +14,7 @@
 			"github": "https://github.com/THoguet/Civilisation-2D"
 		},
 		"logo": "/ressources/logos/projects/approcheObjet.svg",
-		"video": "/ressources/videos/approcheObjet.mkv"
+		"video": "/ressources/videos/approcheObjet.mp4"
 	},
 	{
 		"name": "EcoQuiz",
@@ -33,7 +33,7 @@
 			"release": "https://ndi-2023.theophylhoguet.fr/"
 		},
 		"logo": "/ressources/logos/projects/ndi-2023.svg",
-		"video": "/ressources/videos/ndi-2023.mkv"
+		"video": "/ressources/videos/ndi-2023.mp4"
 	},
 	{
 		"name": "SnapEdit",
