@@ -1,3 +1,4 @@
+git pull
 npm install
 npm run build
 rm -rf /var/www/html/portfolio/*
