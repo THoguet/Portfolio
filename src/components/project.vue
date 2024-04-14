@@ -13,7 +13,7 @@
 				<p class="desc">{{ project.desc }}</p>
 				<techAndLinks class="landscape" :project="project" :portrait="false" />
 			</div>
-			<a :href="project.video" target="_blank" class="videoPreview">
+			<a :href="project.video" target="_blank" class="videoPreview" type="video/mp4">
 				<!-- autoplay  -->
 				<video autoplay loop muted>
 					<source :src="project.video" type="video/mp4" />
