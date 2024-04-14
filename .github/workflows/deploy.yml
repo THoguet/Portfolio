@@ -1,0 +1,24 @@
+name: Deploy
+
+
+# run after validate workflow has completed and the current branch is 'beta'
+on:
+    workflow_run:
+        workflows: ['validate']
+        types: [completed]
+        branches:
+            - 'main'
+
+jobs:
+    deploy:
+      name: deploy
+      runs-on: ubuntu-latest
+      steps:
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: cd /home/nessar/portfolio/ ; ./installRelease.sh
