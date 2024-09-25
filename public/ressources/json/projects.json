@@ -20,7 +20,7 @@
 		"name": "EcoQuiz",
 		"year": 2023,
 		"type": "Personal Project",
-		"desc": "During an event called 'Nuit de l'info' (Night of the info), we had to make a project in 18h. We made a website to help people understanding how we impact the environment with our lifestyle. The website is made with VueJs and Typescript.",
+		"desc": "During an event called 'Nuit de l'info' (Night of the info), we had to make a project in 18 hours. We made a website to help people understanding how we impact the environment with our lifestyle. The website is made with VueJs and Typescript.",
 		"tech": [
 			"VueJs",
 			"Typescript",
