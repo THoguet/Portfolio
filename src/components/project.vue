@@ -8,7 +8,7 @@
 						:src="icon(project.type)" />
 				</h1>
 			</a>
-			<h2 class="type">{{ project.type }}</h2>
+			<h4 class="type">{{ project.type }}</h4>
 		</div>
 		<div class="info">
 			<div class="descTechLinksLandscape">
@@ -126,7 +126,6 @@ a:hover:not(.videoPreview) {
 .title h1 {
 	transition: color 0.5s;
 	color: black;
-	font-size: 2.5em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -135,13 +134,12 @@ a:hover:not(.videoPreview) {
 
 .title h2 {
 	color: black;
-	font-size: 1.5em;
 }
 
 
 .desc {
 	color: black;
-	font-size: 1.5em;
+	/* font-size: 1.5em; */
 	z-index: 10;
 	background-color: var(--black);
 	padding: max(1vw, 1vh);
@@ -218,7 +216,7 @@ a:hover:not(.videoPreview) {
 
 	.descTechLinksLandscape {
 		min-width: 90%;
-		margin-bottom: 35px;
+		margin-bottom: 5px;
 	}
 
 	.title {

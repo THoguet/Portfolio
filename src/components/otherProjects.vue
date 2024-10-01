@@ -2,16 +2,21 @@
 	<div class="project">
 		<div class="other" v-for="(p, id) in projects"
 			:style="'background-color:' + colors[(id + 1) % colors.length] + ';'">
-			<techAndLinks :project="p" class="icons" :only-image="true" />
-			<img :src="p.logo" alt="icon" class="logo icons toBlack" />
-			<div class="infos">
-				<a class="title" :href="p.links['title']">
-					<h1>{{ p.name }}</h1>
-				</a>
-				<h2>{{ p.type }}</h2>
-				<techAndLinks :project="p" class="links" :only-techs="true" />
+			<div class="techInfosIcon">
+				<techAndLinks :project="p" class="icons" :only-image="true"
+					style="align-items: flex-start; justify-content: space-evenly;" />
+				<div class="infosIcon">
+					<div class="infos">
+						<a class="title" :href="p.links['title']">
+							<h1>{{ p.name }}</h1>
+						</a>
+						<h3>{{ p.type }}</h3>
+						<techAndLinks :project="p" class="links" :only-techs="true" style="align-items: flex-start;" />
+					</div>
+					<img :src="p.logo" alt="icon" class="logo icons toBlack" />
+				</div>
 			</div>
-			<p>{{ p.desc }}</p>
+			<p class="desc">{{ p.desc }}</p>
 		</div>
 	</div>
 </template>
@@ -79,7 +84,6 @@ export default defineComponent({
 	background-color: v-bind(bgColor);
 	padding: 1vw 1vh 1vw 1vh;
 	display: flex;
-	align-items: stretch;
 	justify-content: center;
 	align-content: center;
 	flex-direction: row;
@@ -92,21 +96,33 @@ export default defineComponent({
 	max-width: 40vw;
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: space-between;
 	flex-direction: column;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	color: black;
 	border-radius: 10px;
 	border: 1px solid black;
 	padding: min(1vh, 1vw);
 	text-align: center;
+	overflow-y: auto;
+	height: 50%;
+}
+
+.desc {
+	flex-grow: 1;
+	text-align: justify;
+	display: flex;
+	align-items: center;
+}
+
+.infosIcon {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .icons {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding-top: 0.2em;
 	margin: 0;
 	width: 100%;
 }
@@ -114,23 +130,19 @@ export default defineComponent({
 .infos {
 	max-width: 75%;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	flex-direction: column;
-	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 .title {
 	text-decoration: none;
 	text-align: start;
-	line-height: 3rem;
-	margin-top: 1em;
+	line-height: 2.1rem;
 }
 
 .title h1 {
 	transition: color 0.5s;
 	color: black;
-	font-size: 2.5em;
 	display: flex;
 	gap: 20px;
 }
