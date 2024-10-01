@@ -1,7 +1,7 @@
 export const links: { [key: string]: string } = {
 	"angular": 'https://angular.io/',
 	"react": 'https://reactjs.org/',
-	"vue": 'https://vuejs.org/',
+	"vue.js": 'https://vuejs.org/',
 	"node": 'https://nodejs.org/',
 	"express": 'https://expressjs.com/',
 	"mongodb": 'https://www.mongodb.com/',
@@ -12,7 +12,7 @@ export const links: { [key: string]: string } = {
 	"flask": 'https://flask.palletsprojects.com/',
 	"java": 'https://www.java.com/',
 	"spring": 'https://spring.io/',
-	"springboot": 'https://spring.io/projects/spring-boot',
+	"spring boot": 'https://spring.io/projects/spring-boot',
 	"html": 'https://developer.mozilla.org/en-US/docs/Web/HTML',
 	"css": 'https://developer.mozilla.org/en-US/docs/Web/CSS',
 	"javascript": 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
