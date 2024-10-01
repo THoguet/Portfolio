@@ -11,7 +11,8 @@
 							<h1>{{ p.name }}</h1>
 						</a>
 						<h3>{{ p.type }}</h3>
-						<techAndLinks :project="p" class="links" :only-techs="true" style="align-items: flex-start;" />
+						<techAndLinks :project="p" class="links" :only-techs="true"
+							style="align-items: flex-start; justify-content: flex-start;" />
 					</div>
 					<img :src="p.logo" alt="icon" class="logo icons toBlack" />
 				</div>
