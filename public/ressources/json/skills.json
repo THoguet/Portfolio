@@ -60,11 +60,11 @@
 				"logo": "/ressources/logos/javascript.svg"
 			},
 			{
-				"name": "Typescript",
+				"name": "TypeScript",
 				"logo": "/ressources/logos/typescript.svg"
 			},
 			{
-				"name": "VueJs",
+				"name": "Vue.js",
 				"logo": "/ressources/logos/vuejs.svg"
 			},
 			{
@@ -85,7 +85,7 @@
 		"category": "Back-End Web",
 		"skills": [
 			{
-				"name": "SpringBoot",
+				"name": "Spring Boot",
 				"logo": "/ressources/logos/springboot.svg"
 			},
 			{

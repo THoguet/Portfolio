@@ -3,7 +3,7 @@
 		"name": "Civilization 2D",
 		"year": 2023,
 		"type": "School Project",
-		"desc": "A school project aiming to see our understanding of the Java language and the use of design patterns. We had to make game like Civilization, with a map, buildings, resources and an economy. The game is made with Java and JavaFX.",
+		"desc": "A Java-based school project designed to assess our understanding of the Java language and design patterns. We recreated a simplified version of the Civilization game, featuring a map, buildings, resources, and an economic system. Built using Java and JavaFX.",
 		"tech": [
 			"Java",
 			"JavaFX",
@@ -20,10 +20,10 @@
 		"name": "EcoQuiz",
 		"year": 2023,
 		"type": "Personal Project",
-		"desc": "During an event called 'Nuit de l'info' (Night of the info), we had to make a project in 18 hours. We made a website to help people understanding how we impact the environment with our lifestyle. The website is made with VueJs and Typescript.",
+		"desc": "Created during the 'Nuit de l'Info' event, this project was built in 18 hours. The website helps users understand how their lifestyle impacts the environment. It was developed using Vue.js and TypeScript.",
 		"tech": [
-			"VueJs",
-			"Typescript",
+			"Vue.js",
+			"TypeScript",
 			"HTML",
 			"CSS"
 		],
@@ -39,14 +39,14 @@
 		"name": "SnapEdit",
 		"year": 2023,
 		"type": "School Project",
-		"desc": "A school group project to make a web app to edit images, with a lot of filters and effects. Front is made with VueJs and Typescript and the back is made with Java and SpringBoot.",
+		"desc": "A web-based image editing application built as a group project. It offers a variety of filters and effects for images. The front-end was built with Vue.js and TypeScript, while the back-end was developed using Java and Spring Boot.",
 		"tech": [
-			"VueJs",
-			"Typescript",
+			"Vue.js",
+			"TypeScript",
 			"HTML",
 			"CSS",
 			"Java",
-			"SpringBoot"
+			"Spring Boot"
 		],
 		"links": {
 			"title": "https://github.com/THoguet/SnapEdit",
@@ -59,10 +59,10 @@
 		"name": "Portfolio",
 		"year": 2023,
 		"type": "Personal Project",
-		"desc": "A website to showcase my work and skills. Made with VueJs and Typescript, responsive and accessible.",
+		"desc": "A personal website created to showcase my projects and skills. It was built with Vue.js and TypeScript, and designed to be fully responsive and accessible.",
 		"tech": [
-			"VueJs",
-			"Typescript",
+			"Vue.js",
+			"TypeScript",
 			"HTML",
 			"CSS"
 		],
@@ -78,7 +78,7 @@
 		"name": "U-Bomb",
 		"year": 2022,
 		"type": "School Project",
-		"desc": "A bomber like game with a map editor and A* pathfinding AI for monsters, made with Java and JavaFX. First time with POO langage.",
+		"desc": "A bomberman-style game featuring a map editor and monsters controlled by A* pathfinding AI. Developed with Java and JavaFX, it was my first project using object-oriented programming (OOP).",
 		"tech": [
 			"Java",
 			"JavaFX",
@@ -96,13 +96,13 @@
 		"name": "Polyglot TicTacToe",
 		"year": 2022,
 		"type": "Personal Project",
-		"desc": "A side project to show langages I know, for each language there is the time spend, installation steps, tests, a CLI game and a GUI game.",
+		"desc": "A side project showcasing my knowledge of multiple programming languages. For each language, I included time tracking, installation steps, tests, a CLI-based Tic-Tac-Toe game, and a GUI version.",
 		"tech": [
 			"C",
-			"python",
+			"Python",
 			"C++",
 			"Java",
-			"Typescript",
+			"TypeScript",
 			"C#"
 		],
 		"links": {
@@ -116,7 +116,7 @@
 		"name": "LightUp",
 		"year": 2022,
 		"type": "School Project",
-		"desc": "A project thought the whole year, with two teams of 3 people, we had to make a game following rules and methodologies. All the game is in C, with SDL2 for the GUI. The game has been portated to Android and to the web with WebAssembly.",
+		"desc": "A year-long group project with two teams of three people. We developed a game following specific rules and development methodologies. The game is written in C, using SDL2 for the GUI, and was later ported to Android and the web using WebAssembly.",
 		"tech": [
 			"C",
 			"Java",
@@ -133,10 +133,10 @@
 		"video": "/ressources/videos/lightup.mp4"
 	},
 	{
-		"name": "WebSite with Flask",
+		"name": "Website with Flask",
 		"year": 2020,
 		"type": "Personal Project",
-		"desc": "I had already made a website with vanilla HTML and CSS, but i learnt with school how to use Flask, so I made a website with Flask and Jinja. Also I made an API to access university calendar events from my Google Calendar.",
+		"desc": "After learning Flask at school, I created a website with Flask and Jinja, along with an API to fetch university calendar events from my Google Calendar.",
 		"tech": [
 			"Python",
 			"Flask"
@@ -153,7 +153,7 @@
 		"name": "Bots for a Teamspeak Server",
 		"year": 2016,
 		"type": "Personal Project",
-		"desc": "With my friends we had a Teamspeak Server, and I saw that there was an api to access functions of the server, so I made a bot to move AFK people in a channel, and a bot to move people in a channel when they were talking, to assign roles to people.",
+		"desc": "Developed bots for a Teamspeak server, using its API to automate tasks such as moving AFK users to a specific channel and assigning roles based on activity.",
 		"tech": [
 			"Python"
 		],
