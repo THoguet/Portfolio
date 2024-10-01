@@ -6,11 +6,11 @@
 		<div class="images" v-if="!onlyTechsData">
 			<a class="tooltip" v-if="'github' in project.links" :href="project.links['github']" target="_blank"
 				title="See the code">
-				<img src="/ressources/logos/github.svg" alt="GitHub" class="icon" />
+				<img src="/ressources/logos/github.svg" alt="GitHub" class="icon toBlack" />
 			</a>
 			<a class="tooltip" v-if="'release' in project.links" :href="project.links['release']" target="_blank"
 				title="Test the program">
-				<img src="/ressources/images/check.svg" alt="Release" class="icon" />
+				<img src="/ressources/images/check.svg" alt="Release" class="icon toBlack" />
 			</a>
 		</div>
 	</div>
@@ -74,7 +74,7 @@ export default defineComponent({
 }
 
 .images img {
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+	/* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
 	border-radius: 50%;
 	border: 1px solid var(--black);
 }
@@ -88,7 +88,7 @@ export default defineComponent({
 }
 
 .techs a {
-	color: var(--black);
+	color: black;
 	font-weight: bold;
 	z-index: 10;
 }
@@ -106,7 +106,7 @@ export default defineComponent({
 	left: 50%;
 	transform: translateX(-50%);
 	padding: 5px;
-	background-color: #333;
+	background-color: black;
 	color: #fff;
 	font-size: 14px;
 	white-space: nowrap;

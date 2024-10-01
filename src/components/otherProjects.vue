@@ -1,8 +1,9 @@
 <template>
 	<div class="project">
-		<div class="other" v-for="(p, id) in projects" :style="'background-color:' + colors[id % colors.length] + ';'">
+		<div class="other" v-for="(p, id) in projects"
+			:style="'background-color:' + colors[(id + 1) % colors.length] + ';'">
 			<techAndLinks :project="p" class="icons" :only-image="true" />
-			<img :src="p.logo" alt="icon" class="logo icons" />
+			<img :src="p.logo" alt="icon" class="logo icons toBlack" />
 			<div class="infos">
 				<a class="title" :href="p.links['title']">
 					<h1>{{ p.name }}</h1>
@@ -36,10 +37,15 @@ export default defineComponent({
 			type: Array as () => String[],
 			required: true,
 		},
+		bgColorId: {
+			type: Number,
+			required: true,
+		},
 	},
 	data() {
 		return {
 			height: '80vh',
+			bgColor: this.colors[this.bgColorId % this.colors.length],
 		};
 	},
 	watch: {
@@ -70,7 +76,7 @@ export default defineComponent({
 .project {
 	width: 100vw;
 	height: v-bind(height);
-	background-color: gray;
+	background-color: v-bind(bgColor);
 	padding: 1vw 1vh 1vw 1vh;
 	display: flex;
 	align-items: stretch;
@@ -89,8 +95,9 @@ export default defineComponent({
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	color: var(--black);
+	color: black;
 	border-radius: 10px;
+	border: 1px solid black;
 	padding: min(1vh, 1vw);
 	text-align: center;
 }
@@ -122,7 +129,7 @@ export default defineComponent({
 
 .title h1 {
 	transition: color 0.5s;
-	color: var(--black);
+	color: black;
 	font-size: 2.5em;
 	display: flex;
 	gap: 20px;

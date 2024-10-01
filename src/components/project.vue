@@ -4,7 +4,9 @@
 		<div class="title">
 			<h2 class="year">{{ project.year }}</h2>
 			<a :href="project.links['title']">
-				<h1>{{ project.name }} <img class="icon" v-if="icon(project.type) != ''" :src="icon(project.type)" /></h1>
+				<h1>{{ project.name }} <img class="icon toBlack" v-if="icon(project.type) != ''"
+						:src="icon(project.type)" />
+				</h1>
 			</a>
 			<h2 class="type">{{ project.type }}</h2>
 		</div>
@@ -80,6 +82,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
+a:hover:not(.videoPreview) {
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
 .project {
 	width: 100vw;
 	height: v-bind(height);
@@ -118,7 +125,7 @@ export default defineComponent({
 
 .title h1 {
 	transition: color 0.5s;
-	color: var(--black);
+	color: black;
 	font-size: 2.5em;
 	display: flex;
 	align-items: center;
@@ -127,16 +134,16 @@ export default defineComponent({
 }
 
 .title h2 {
-	color: var(--black);
+	color: black;
 	font-size: 1.5em;
 }
 
 
 .desc {
-	color: var(--black);
+	color: black;
 	font-size: 1.5em;
 	z-index: 10;
-	background-color: gray;
+	background-color: var(--black);
 	padding: max(1vw, 1vh);
 	border-radius: 15px;
 	text-align: center;
@@ -144,6 +151,7 @@ export default defineComponent({
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+	color: white;
 }
 
 .desc::-webkit-scrollbar {
@@ -210,7 +218,7 @@ export default defineComponent({
 
 	.descTechLinksLandscape {
 		min-width: 90%;
-		margin-bottom: max(-2vh, -35px);
+		margin-bottom: 35px;
 	}
 
 	.title {

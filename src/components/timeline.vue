@@ -6,7 +6,7 @@
 				<project v-for="(p, id) in projects" :project="p" :fullscreen="fullscreen"
 					:color="COLORS[id % COLORS.length]" />
 				<OtherProjects v-if="nbTotalProjects > nbMaxProjectsFullPage" v-for="(p, id) in splitOtherProjects()"
-					:projects="p" :fullscreen="fullscreen" :colors="COLORS" />
+					:projects="p" :fullscreen="fullscreen" :colors="COLORS" :bg-color-id="nbMaxProjectsFullPage" />
 			</div>
 		</div>
 	</div>
@@ -26,9 +26,9 @@ const enum STATUS {
 	INVIEWPORT,
 	AFTERVIEWPORT,
 }
-const COLORS = ["#DDF9C1", "#F8DDA4", "#F9A03F", "#D45113", "#813405"]
+const COLORS = ["#660708", "#a4161a", "#ba181b", "#e5383b", "#b1a7a6", "#d3d3d3", "#f5f3f4", "#ffffff"]
 
-const nbMaxProjectsFullPage = 6;
+const nbMaxProjectsFullPage = 5;
 
 export default defineComponent({
 	name: "timeline",
@@ -172,11 +172,6 @@ export default defineComponent({
 	will-change: transform;
 	transition: transform 0.1s;
 }
-
-:deep(a:hover:not(.videoPreview)) {
-	filter: invert(100%);
-}
-
 
 :deep(.icon) {
 	max-width: 40px;
