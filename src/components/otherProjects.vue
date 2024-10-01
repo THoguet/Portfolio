@@ -4,7 +4,7 @@
 			:style="'background-color:' + colors[(id + 1) % colors.length] + ';'">
 			<div class="techInfosIcon">
 				<techAndLinks :project="p" class="icons" :only-image="true"
-					style="align-items: flex-start; justify-content: flex-start;" />
+					style="align-items: flex-start; justify-content: flex-start; padding: 0;" />
 				<div class="infosIcon">
 					<div class="infos">
 						<a class="title" :href="p.links['title']">
