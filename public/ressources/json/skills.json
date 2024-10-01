@@ -41,6 +41,14 @@
 			{
 				"name": "WebAssembly",
 				"logo": "/ressources/logos/webassembly.svg"
+			},
+			{
+				"name": "VSCode",
+				"logo": "/ressources/logos/vscode.svg"
+			},
+			{
+				"name": "Docker",
+				"logo": "/ressources/logos/docker.svg"
 			}
 		]
 	},
@@ -56,7 +64,7 @@
 				"logo": "/ressources/logos/css.svg"
 			},
 			{
-				"name": "Javascript",
+				"name": "JavaScript",
 				"logo": "/ressources/logos/javascript.svg"
 			},
 			{
@@ -93,11 +101,11 @@
 				"logo": "/ressources/logos/flask.svg"
 			},
 			{
-				"name": "Javascript",
+				"name": "JavaScript",
 				"logo": "/ressources/logos/javascript.svg"
 			},
 			{
-				"name": "Typescript",
+				"name": "TypeScript",
 				"logo": "/ressources/logos/typescript.svg"
 			},
 			{
