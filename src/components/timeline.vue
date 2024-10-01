@@ -35,6 +35,9 @@ export default defineComponent({
 	created() {
 		window.addEventListener("scroll", this.handleScroll);
 		window.addEventListener("resize", this.handleResize);
+		window.addEventListener("touchstart", this.handleTouchStart);
+		window.addEventListener("touchend", this.handleTouchEnd);
+		window.addEventListener("touchmove", this.handleTouchMove);
 		this.handleResize();
 		fetch("/ressources/json/projects.json")
 			.then(response => response.json())
@@ -57,6 +60,9 @@ export default defineComponent({
 	beforeUnmount() {
 		window.removeEventListener("resize", this.handleResize);
 		window.removeEventListener("scroll", this.handleScroll);
+		window.removeEventListener("touchstart", this.handleTouchStart);
+		window.removeEventListener("touchend", this.handleTouchEnd);
+		window.removeEventListener("touchmove", this.handleTouchMove);
 	},
 	data() {
 		return {
@@ -66,9 +72,28 @@ export default defineComponent({
 			projects: [] as Project[],
 			otherProjects: [] as Project[],
 			fullscreen: false,
+			startX: 0,
+			startY: 0,
 		};
 	},
 	methods: {
+		handleTouchStart(event: TouchEvent) {
+			this.startX = event.touches[0].clientX;
+			this.startY = event.touches[0].clientY;
+		},
+		handleTouchEnd(event: TouchEvent) {
+			this.startX = 0;
+			this.startY = 0;
+		},
+		handleTouchMove(event: TouchEvent) {
+			const endX = event.changedTouches[0].clientX;
+			const endY = event.changedTouches[0].clientY;
+			const diffX = this.startX - endX;
+			const diffY = this.startY - endY;
+			if (Math.abs(diffX) > Math.abs(diffY)) {
+				window.scrollBy({ top: -diffX, left: 0, behavior: 'smooth' });
+			}
+		},
 		handleScroll(event: Event) {
 			const timelineSticky = document.getElementById("timelineSticky");
 			const timeline = document.getElementById("timeline");
