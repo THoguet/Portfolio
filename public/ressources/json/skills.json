@@ -121,6 +121,10 @@
 				"logo": "/ressources/logos/mongodb.svg"
 			},
 			{
+				"name": "PostgreSQL",
+				"logo": "/ressources/logos/postgresql.svg"
+			},
+			{
 				"name": "Git",
 				"logo": "/ressources/logos/git.svg"
 			}

@@ -1,5 +1,28 @@
 [
 	{
+		"name": "GCImmoPro Website",
+		"year": 2024,
+		"type": "Professional Project",
+		"desc": "A website for a real estate agency specializing in commercial properties. The site features a property search engine, a contact form, and a blog. It was built with Vue.js and Nuxt.js, and is fully responsive and SEO-friendly.",
+		"tech": [
+			"Vue.js",
+			"Java",
+			"Spring Boot",
+			"TypeScript",
+			"HTML",
+			"CSS",
+			"PostgreSQL",
+			"Docker"
+		],
+		"links": {
+			"title": "https://gcimmopro.theophylhoguet.fr/",
+			"release": "https://gcimmopro.theophylhoguet.fr/",
+			"github": "https://github.com/THoguet/gcimmopro"
+		},
+		"logo": "/ressources/logos/projects/gcimmopro.svg",
+		"video": "/ressources/videos/gcimmopro.mkv"
+	},
+	{
 		"name": "Civilization 2D",
 		"year": 2023,
 		"type": "School Project",

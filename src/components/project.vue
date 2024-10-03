@@ -116,6 +116,7 @@ a:hover:not(.videoPreview) {
 	align-items: center;
 	justify-content: space-between;
 	width: 80%;
+	overflow-y: auto;
 }
 
 .title a {
@@ -130,6 +131,7 @@ a:hover:not(.videoPreview) {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+	text-align: center;
 }
 
 .title h2 {
