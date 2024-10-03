@@ -72,6 +72,8 @@ export default defineComponent({
 					return '/ressources/images/school.svg';
 				case 'Personal Project':
 					return '/ressources/images/perso.svg';
+				case 'Professional Project':
+					return '/ressources/images/pro.svg';
 				default:
 					return '';
 			}

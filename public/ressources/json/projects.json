@@ -3,7 +3,7 @@
 		"name": "GCImmoPro Website",
 		"year": 2024,
 		"type": "Professional Project",
-		"desc": "A website for a real estate agency specializing in commercial properties. The site features a property search engine, a contact form, and a blog. It was built with Vue.js and Nuxt.js, and is fully responsive and SEO-friendly.",
+		"desc": "A real estate website developed for a client. The website allows users to search for properties, view details, and contact the agency. It alows the agency to manage clients and ads. The front-end was built with Vue.js and TypeScript, while the back-end was developed using Java and Spring Boot. The database is PostgreSQL, and the website is deployed using Docker.",
 		"tech": [
 			"Vue.js",
 			"Java",

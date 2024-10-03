@@ -70,6 +70,8 @@ export default defineComponent({
 					return '/ressources/images/school.svg';
 				case 'Personal Project':
 					return '/ressources/images/perso.svg';
+				case 'Professional Project':
+					return '/ressources/images/pro.svg';
 				default:
 					return '';
 			}
@@ -106,7 +108,7 @@ export default defineComponent({
 	padding: min(1vh, 1vw);
 	text-align: center;
 	overflow-y: auto;
-	height: 50%;
+	max-height: 33%;
 }
 
 .desc {
