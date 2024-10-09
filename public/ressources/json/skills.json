@@ -127,6 +127,10 @@
 			{
 				"name": "Git",
 				"logo": "/ressources/logos/git.svg"
+			},
+			{
+				"name": "FireBase",
+				"logo": "/ressources/logos/firebase.svg"
 			}
 		]
 	},

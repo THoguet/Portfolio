@@ -1,12 +1,12 @@
 <template>
-	<a id="projects" />
 	<div class="timeLineOuter bg" id="timeLineOuter">
 		<div id="timelineSticky">
 			<div class="timeline bg" id="timeline">
 				<project v-for="(p, id) in projects" :project="p" :fullscreen="fullscreen"
 					:color="COLORS[id % COLORS.length]" />
 				<OtherProjects v-if="nbTotalProjects > nbMaxProjectsFullPage" v-for="(p, id) in splitOtherProjects()"
-					:projects="p" :fullscreen="fullscreen" :colors="COLORS" :bg-color-id="nbMaxProjectsFullPage" />
+					:projects="p" :fullscreen="fullscreen" :colors="COLORS" :bg-color-id="nbMaxProjectsFullPage"
+					:offset="id * nbOtherProjectsByPage" />
 			</div>
 		</div>
 	</div>
@@ -26,7 +26,7 @@ const enum STATUS {
 	INVIEWPORT,
 	AFTERVIEWPORT,
 }
-const COLORS = ["#660708", "#a4161a", "#ba181b", "#e5383b", "#b1a7a6", "#d3d3d3", "#f5f3f4", "#ffffff"]
+const COLORS = ["#660708", "#a4161a", "#ba181b", "#e5383b", "#b1a7a6", "#d3d3d3", "#f5f3f4"]
 
 const nbMaxProjectsFullPage = 5;
 
@@ -134,13 +134,13 @@ export default defineComponent({
 			const w = window.innerWidth;
 			const h = window.innerHeight;
 			if (h <= 800 || w <= 800) {
-				this.nbOtherProjectsByPage = 4;
+				this.nbOtherProjectsByPage = 2;
 			}
 			else if (h <= 1100 || w <= 1100) {
-				this.nbOtherProjectsByPage = 6;
+				this.nbOtherProjectsByPage = 4;
 			}
 			else {
-				this.nbOtherProjectsByPage = 8;
+				this.nbOtherProjectsByPage = 6;
 			}
 			this.calcNbPage();
 		},

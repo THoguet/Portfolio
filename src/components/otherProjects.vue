@@ -1,7 +1,7 @@
 <template>
 	<div class="project">
 		<div class="other" v-for="(p, id) in projects"
-			:style="'background-color:' + colors[(id + 1) % colors.length] + ';'">
+			:style="'background-color:' + colors[(id + offset) % colors.length] + ';'">
 			<div class="techInfosIcon">
 				<techAndLinks :project="p" class="icons" :only-image="true"
 					style="align-items: flex-start; justify-content: flex-start; padding: 0;" />
@@ -47,6 +47,10 @@ export default defineComponent({
 			type: Number,
 			required: true,
 		},
+		offset: {
+			type: Number,
+			required: true,
+		},
 	},
 	data() {
 		return {
@@ -89,14 +93,18 @@ export default defineComponent({
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	transition: width 0.75s, height 0.75s;
 	gap: max(1vw, 1vh);
 }
 
+.techInfosIcon {
+	width: 100%;
+}
+
 .other {
-	max-width: 40vw;
+	max-width: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -108,7 +116,7 @@ export default defineComponent({
 	padding: min(1vh, 1vw);
 	text-align: center;
 	overflow-y: auto;
-	max-height: 33%;
+	max-height: 100%;
 }
 
 .desc {
@@ -159,28 +167,7 @@ export default defineComponent({
 }
 
 .logo {
-	height: 50%;
-	max-width: 25%;
+	max-width: 10%;
 	padding: min(1vh, 1vw);
-}
-
-@media (orientation: landscape) {
-	@media (max-height: 600px) {
-		.other {
-			max-width: 23vw;
-		}
-	}
-
-	@media (max-height: 900px) and (min-height: 600px) {
-		.other {
-			min-width: 27vw;
-		}
-	}
-
-	@media (min-height: 900px) {
-		.other {
-			min-width: 20vw;
-		}
-	}
 }
 </style>
