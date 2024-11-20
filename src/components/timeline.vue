@@ -26,7 +26,7 @@ const enum STATUS {
 	INVIEWPORT,
 	AFTERVIEWPORT,
 }
-const COLORS = ["#660708", "#a4161a", "#ba181b", "#e5383b", "#b1a7a6", "#d3d3d3", "#f5f3f4"]
+const COLORS = ["#D49956", "#D87C69", "#AC9770", "#F2EDE3", "#88905E", "#7F8386", "#8EAAC2"]
 
 const nbMaxProjectsFullPage = 5;
 

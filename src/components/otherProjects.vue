@@ -54,8 +54,7 @@ export default defineComponent({
 	},
 	data() {
 		return {
-			height: '80vh',
-			bgColor: this.colors[this.bgColorId % this.colors.length],
+			height: '80vh'
 		};
 	},
 	watch: {
@@ -88,7 +87,7 @@ export default defineComponent({
 .project {
 	width: 100vw;
 	height: v-bind(height);
-	background-color: v-bind(bgColor);
+	background-color: #292929;
 	padding: 1vw 1vh 1vw 1vh;
 	display: flex;
 	justify-content: center;
