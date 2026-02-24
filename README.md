@@ -10,20 +10,20 @@ A simple website used to show my skills in computer science.
 git clone git@github.com:thoguet/portfolio
 ```
 
-### Install with npm
+### Install with Bun
 
 ```sh
-npm install
+bun install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+bun run dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+bun run build
 ```
